@@ -1,42 +1,128 @@
-import { Link } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
+import logo from "../../../public/assets/logo/N.png";
 
 const Navbar = () => {
-
+    const navLinks = (
+        <>
+            <li>
+                <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                        isActive ? "text-cyan-600 font-semibold" : "hover:text-cyan-500"
+                    }
+                >
+                    Home
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    to="/dashboard"
+                    className={({ isActive }) =>
+                        isActive ? "text-cyan-600 font-semibold" : "hover:text-cyan-500"
+                    }
+                >
+                    Dashboard
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    to="/progress"
+                    className={({ isActive }) =>
+                        isActive ? "text-cyan-600 font-semibold" : "hover:text-cyan-500"
+                    }
+                >
+                    Progress
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    to="/add-meal"
+                    className={({ isActive }) =>
+                        isActive ? "text-cyan-600 font-semibold" : "hover:text-cyan-500"
+                    }
+                >
+                    Add Meal
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    to="/statistics"
+                    className={({ isActive }) =>
+                        isActive ? "text-cyan-600 font-semibold" : "hover:text-cyan-500"
+                    }
+                >
+                    Statistics
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    to="/contact"
+                    className={({ isActive }) =>
+                        isActive ? "text-cyan-600 font-semibold" : "hover:text-cyan-500"
+                    }
+                >
+                    Contact
+                </NavLink>
+            </li>
+        </>
+    );
 
     return (
-        <>
-            <div className="navbar bg-base-100 shadow-sm">
-                <div className="navbar-start">
-                    <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
-                        </div>
+        <div className="sticky top-0 z-50 bg-gray-400/50 backdrop-blur-lg shadow-md">
+            <div className="navbar max-w-7xl mx-auto px-4 py-2">
+                {/* Left: Logo + Mobile Menu */}
+                <div className="navbar-start flex items-center">
+                    <Link to="/" className="text-2xl font-bold text-white tracking-wide">
+                        <img
+                            src={logo}
+                            alt="NutriTrack Logo"
+                            className="h-10 sm:h-12 object-contain"
+                        />
+                    </Link>
+
+                    {/* Mobile Dropdown */}
+                    <div className="dropdown lg:hidden ml-3">
+                        <label tabIndex={0} className="btn btn-ghost p-2">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="h-6 w-6 text-white"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                />
+                            </svg>
+                        </label>
                         <ul
-                            tabIndex="-1"
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Homepage</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>About</a></li>
+                            tabIndex={0}
+                            className="menu menu-sm dropdown-content bg-gray-600 rounded-xl mt-3 w-52 p-2 shadow-md border border-gray-100"
+                        >
+                            {navLinks}
                         </ul>
                     </div>
                 </div>
-                <div className="navbar-center">
-                    <a className="btn btn-ghost text-xl"><Link to='/ErrorPage'>daisyUI</Link></a>
+
+                {/* Center: Desktop Menu */}
+                <div className="navbar-center hidden lg:flex">
+                    <ul className="menu menu-horizontal px-1 gap-3">{navLinks}</ul>
                 </div>
+
+                {/* Right: Optional Button */}
                 <div className="navbar-end">
-                    <button className="btn btn-ghost btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg>
-                    </button>
-                    <button className="btn btn-ghost btn-circle">
-                        <div className="indicator">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /> </svg>
-                            <span className="badge badge-xs badge-primary indicator-item"></span>
-                        </div>
-                    </button>
+                    <Link
+                        to="/profile"
+                        className="btn btn-primary rounded-full px-5 text-sm sm:text-base hover:bg-cyan-700 transition"
+                    >
+                        Profile
+                    </Link>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
