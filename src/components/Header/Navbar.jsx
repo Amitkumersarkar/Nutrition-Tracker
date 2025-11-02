@@ -56,12 +56,12 @@ const Navbar = () => {
             </li>
             <li>
                 <NavLink
-                    to="/custom-meal"
+                    to="/meal-plan"
                     className={({ isActive }) =>
                         isActive ? "text-cyan-600 font-semibold" : "hover:text-cyan-500"
                     }
                 >
-                    Custom Meal
+                    Meal Plan
                 </NavLink>
             </li>
         </>
