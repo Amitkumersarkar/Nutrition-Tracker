@@ -46,22 +46,22 @@ const Navbar = () => {
             </li>
             <li>
                 <NavLink
-                    to="/statistics"
+                    to="/present-meal"
                     className={({ isActive }) =>
                         isActive ? "text-cyan-600 font-semibold" : "hover:text-cyan-500"
                     }
                 >
-                    Statistics
+                    Present Meal
                 </NavLink>
             </li>
             <li>
                 <NavLink
-                    to="/contact"
+                    to="/custom-meal"
                     className={({ isActive }) =>
                         isActive ? "text-cyan-600 font-semibold" : "hover:text-cyan-500"
                     }
                 >
-                    Contact
+                    Custom Meal
                 </NavLink>
             </li>
         </>
@@ -118,7 +118,7 @@ const Navbar = () => {
                         to="/profile"
                         className="btn btn-primary rounded-full px-5 text-sm sm:text-base hover:bg-cyan-700 transition"
                     >
-                        Profile
+                        SingIn
                     </Link>
                 </div>
             </div>
