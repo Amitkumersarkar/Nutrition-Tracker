@@ -8,6 +8,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import MealEntry from './Pages/MealEntryForm/MealEntry';
 import PresentMeal from './Pages/PresentMeal/PresentMeal';
 import BmiCalculator from './Pages/BMI/BmiCalculator';
+import MealPlan from './Pages/MealPlan/MealPlan';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: '/bmi-calculator',
         element: <BmiCalculator></BmiCalculator>
+      },
+      {
+        path: '/meal-plan',
+        element: <MealPlan></MealPlan>
       }
     ]
   },

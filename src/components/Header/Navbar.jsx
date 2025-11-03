@@ -14,7 +14,7 @@ const Navbar = () => {
                     Home
                 </NavLink>
             </li>
-            <li>
+            {/* <li>
                 <NavLink
                     to="/add-meal"
                     className={({ isActive }) =>
@@ -23,7 +23,7 @@ const Navbar = () => {
                 >
                     Add Meal
                 </NavLink>
-            </li>
+            </li> */}
             <li>
                 <NavLink
                     to="/bmi-calculator"

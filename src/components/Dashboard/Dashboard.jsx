@@ -28,6 +28,7 @@ const Dashboard = () => {
                     <h1 className="text-3xl font-bold">Nutrition Dashboard 🥦</h1>
                     <p className="text-gray-400">Track your health and daily goals</p>
                 </div>
+
                 <input
                     type="date"
                     value={date}
