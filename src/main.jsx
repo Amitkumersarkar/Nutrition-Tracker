@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         element: <Dashboard></Dashboard>
       },
       {
-        path: '/add-meal',
+        path: '/user-info',
         element: <MealEntry></MealEntry>
       }
     ]

@@ -16,12 +16,12 @@ const Navbar = () => {
             </li>
             <li>
                 <NavLink
-                    to="/dashboard"
+                    to="/add-meal"
                     className={({ isActive }) =>
                         isActive ? "text-cyan-600 font-semibold" : "hover:text-cyan-500"
                     }
                 >
-                    Dashboard
+                    Add Meal
                 </NavLink>
             </li>
             <li>
@@ -36,12 +36,12 @@ const Navbar = () => {
             </li>
             <li>
                 <NavLink
-                    to="/add-meal"
+                    to="/user-info"
                     className={({ isActive }) =>
                         isActive ? "text-cyan-600 font-semibold" : "hover:text-cyan-500"
                     }
                 >
-                    Add Meal
+                    User Info
                 </NavLink>
             </li>
             <li>
