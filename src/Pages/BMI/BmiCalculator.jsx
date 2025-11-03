@@ -90,7 +90,7 @@ const BmiCalculator = () => {
     return (
         <div className="min-h-screen bg-linear-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center px-4 py-10">
             <div className="bg-gray-800 shadow-lg rounded-2xl p-6 w-full max-w-md text-center mb-10">
-                <h2 style={{ fontFamily: "Rancho, cursive" }} className="text-4xl font-bold mb-4 text-cyan-400">BMI CALCULATOR </h2>
+                <h2 style={{ fontFamily: "Rancho, cursive" }} className="text-4xl font-bold mb-4 text-cyan-400"> BMI CALCULATOR </h2>
 
                 <form onSubmit={calculateBMI} className="space-y-4">
                     <div>

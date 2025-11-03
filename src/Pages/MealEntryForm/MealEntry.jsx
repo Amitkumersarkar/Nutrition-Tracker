@@ -156,7 +156,7 @@ const MealEntry = () => {
     return (
         <div className="max-w-4xl mx-auto mt-10 mb-12 p-6 bg-gray-900 rounded-lg shadow-lg">
             <h2 className="text-5xl font-semibold mb-6 text-center text-cyan-400" style={{ fontFamily: "Rancho, cursive" }}>
-                Nutrition Tracker User & Meal Info
+                📋 User & Meal Info
             </h2>
 
             <form onSubmit={handleSubmit} className="space-y-8">
