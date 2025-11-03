@@ -7,7 +7,6 @@ const MealPlan = () => {
         { id: 3, name: "Broccoli", weight: 100 },
     ]);
 
-    // Handle changing weight input
     const handleWeightChange = (id, newWeight) => {
         setMealItems((prev) =>
             prev.map((item) =>
