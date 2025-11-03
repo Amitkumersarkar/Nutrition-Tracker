@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
-import ErrorPage from './Pages/ErrorPage';
+import ErrorPage from './Pages/ErrorPage/ErrorPage';
 import MainLayout from './Layout/MainLayout';
 import Dashboard from './components/Dashboard/Dashboard';
 import MealEntry from './Pages/MealEntryForm/MealEntry';

@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import errorLottieAnimation from "../../public/assets/Lottie/Lonely 404.json";
+import errorLottieAnimation from "../../../public/assets/Lottie/Lonely 404.json";
 import { NavLink } from "react-router-dom";
 
 const ErrorPage = () => {
