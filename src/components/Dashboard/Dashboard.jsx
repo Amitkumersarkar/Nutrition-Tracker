@@ -22,10 +22,9 @@ const Dashboard = () => {
 
     return (
         <div className="min-h-screen bg-gray-900 text-white p-6 md:p-10">
-            {/* Header */}
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
                 <div>
-                    <h1 style={{ fontFamily: "Rancho, cursive" }} className="text-5xl font-bold">Nutrition Dashboard</h1>
+                    <h1 style={{ fontFamily: "Rancho, cursive" }} className="text-5xl text-cyan-400 font-bold">Nutrition Dashboard</h1>
                     <p style={{ fontFamily: "Rancho, cursive" }} className="text-gray-400 text-2xl text-center">Track your health and daily goals</p>
                 </div>
 

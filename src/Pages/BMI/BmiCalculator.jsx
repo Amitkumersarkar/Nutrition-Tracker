@@ -145,7 +145,7 @@ const BmiCalculator = () => {
                 )}
             </div>
 
-            {/* Chart Section */}
+            {/* BMI Chart Section */}
             {history.length > 0 && (
                 <div className="bg-gray-800 rounded-2xl shadow-lg p-6 w-full max-w-3xl">
                     <div className="flex justify-between items-center mb-4">

@@ -75,12 +75,10 @@ const PresentMeal = () => {
                         key={i}
                         className="bg-gray-800 rounded-2xl p-5 flex flex-col justify-between shadow-lg hover:scale-[1.02] transition-transform"
                     >
-                        {/* Meal Title */}
                         <h2 className="text-xl font-semibold mb-4 text-center">
                             {meal.title}
                         </h2>
 
-                        {/* Food List */}
                         <div className="space-y-1 mb-4">
                             {meal.foods.map((food, j) => (
                                 <div
@@ -93,7 +91,6 @@ const PresentMeal = () => {
                             ))}
                         </div>
 
-                        {/* Nutrition */}
                         <div className="bg-gray-900 rounded-lg p-3 text-sm mb-4">
                             {Object.entries(meal.nutrition).map(([key, value], idx) => (
                                 <div
@@ -110,7 +107,6 @@ const PresentMeal = () => {
                             </div>
                         </div>
 
-                        {/* Buttons */}
                         <div className="flex flex-col gap-2">
                             <button className="bg-green-500 hover:bg-green-600 text-black font-semibold py-2 rounded-lg transition">
                                 Log Meal

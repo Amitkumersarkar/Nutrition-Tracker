@@ -14,16 +14,6 @@ const Navbar = () => {
                     Home
                 </NavLink>
             </li>
-            {/* <li>
-                <NavLink
-                    to="/add-meal"
-                    className={({ isActive }) =>
-                        isActive ? "text-cyan-600 font-semibold" : "hover:text-cyan-500"
-                    }
-                >
-                    Add Meal
-                </NavLink>
-            </li> */}
             <li>
                 <NavLink
                     to="/bmi-calculator"

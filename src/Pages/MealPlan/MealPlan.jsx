@@ -16,7 +16,6 @@ const MealPlan = () => {
         );
     };
 
-    // Add a new meal item
     const handleAddItem = () => {
         setMealItems((prev) => [
             ...prev,
@@ -24,12 +23,10 @@ const MealPlan = () => {
         ]);
     };
 
-    // Remove a meal item
     const handleRemoveItem = (id) => {
         setMealItems((prev) => prev.filter((item) => item.id !== id));
     };
 
-    // Reset all items
     const handleReset = () => {
         setMealItems([]);
     };

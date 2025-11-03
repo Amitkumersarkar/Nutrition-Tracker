@@ -148,7 +148,6 @@ const MealEntry = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6">
 
-                {/* User Info Card */}
                 <div className="bg-gray-800 p-4 rounded-lg shadow-md space-y-4">
                     <h3 className="text-xl font-medium text-cyan-400">User Info</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -202,7 +201,6 @@ const MealEntry = () => {
                     </div>
                 </div>
 
-                {/* Meal Info Card */}
                 <div className="bg-gray-800 p-4 rounded-lg shadow-md space-y-4">
                     <h3 className="text-xl font-medium text-cyan-400">Meal Info</h3>
                     <div className="space-y-4">
