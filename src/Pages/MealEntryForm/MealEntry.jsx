@@ -141,7 +141,7 @@ const MealEntry = () => {
     );
 
     return (
-        <div className="max-w-4xl mx-auto mb-8 p-6 bg-black rounded-lg mt-8 shadow-lg">
+        <div className="max-w-4xl bg-linear-to-b mx-auto mb-8 p-6 rounded-lg mt-8 shadow-lg">
             <h2 style={{ fontFamily: "Rancho, cursive" }} className="text-4xl font-semibold mb-6 text-center text-cyan-400">
                 Nutrition Tracker
             </h2>

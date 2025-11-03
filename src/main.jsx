@@ -6,6 +6,8 @@ import ErrorPage from './Pages/ErrorPage';
 import MainLayout from './Layout/MainLayout';
 import Dashboard from './components/Dashboard/Dashboard';
 import MealEntry from './Pages/MealEntryForm/MealEntry';
+import PresentMeal from './Pages/PresentMeal/PresentMeal';
+import BmiCalculator from './Pages/BMI/BmiCalculator';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: '/user-info',
         element: <MealEntry></MealEntry>
+      },
+      {
+        path: '/present-meal',
+        element: <PresentMeal></PresentMeal>
+      },
+      {
+        path: '/bmi-calculator',
+        element: <BmiCalculator></BmiCalculator>
       }
     ]
   },
