@@ -25,8 +25,8 @@ const Dashboard = () => {
             {/* Header */}
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
                 <div>
-                    <h1 className="text-3xl font-bold">Nutrition Dashboard 🥦</h1>
-                    <p className="text-gray-400">Track your health and daily goals</p>
+                    <h1 style={{ fontFamily: "Rancho, cursive" }} className="text-5xl font-bold">Nutrition Dashboard</h1>
+                    <p style={{ fontFamily: "Rancho, cursive" }} className="text-gray-400 text-2xl text-center">Track your health and daily goals</p>
                 </div>
 
                 <input

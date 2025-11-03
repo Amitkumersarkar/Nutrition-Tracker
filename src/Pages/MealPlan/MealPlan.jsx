@@ -36,7 +36,7 @@ const MealPlan = () => {
 
     return (
         <div className="p-6 max-w-md mx-auto bg-linear-to-b from-gray-900 to-gray-900 m-20 text-white rounded-2xl shadow-lg">
-            <h2 className="text-2xl font-bold mb-4 text-center text-green-400">
+            <h2 style={{ fontFamily: "Rancho, cursive" }} className="text-5xl font-bold mb-4 text-center text-cyan-400">
                 🥗 Custom Meal Plan
             </h2>
 
